@@ -3,40 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="calculator">
-    <input type="text" id="display" readonly>
+<header>
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="buttons">
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="deleteLast()">DEL</button>
-        <button onclick="appendValue('%')">%</button>
-        <button onclick="appendValue('/')">÷</button>
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Mcmarie</span></h1>
+        <p>Aspiring Software Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+</header>
 
-        <button onclick="appendValue('7')">7</button>
-        <button onclick="appendValue('8')">8</button>
-        <button onclick="appendValue('9')">9</button>
-        <button onclick="appendValue('*')">×</button>
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am passionate about software development and enjoy building websites
+        and applications. My goal is to become a professional developer and
+        solve real-world problems with technology.
+    </p>
+</section>
 
-        <button onclick="appendValue('4')">4</button>
-        <button onclick="appendValue('5')">5</button>
-        <button onclick="appendValue('6')">6</button>
-        <button onclick="appendValue('-')">−</button>
+<section id="projects" class="projects">
+    <h2>Projects</h2>
 
-        <button onclick="appendValue('1')">1</button>
-        <button onclick="appendValue('2')">2</button>
-        <button onclick="appendValue('3')">3</button>
-        <button onclick="appendValue('+')">+</button>
-
-        <button onclick="appendValue('0')">0</button>
-        <button onclick="appendValue('.')">.</button>
-        <button class="equal" onclick="calculate()">=</button>
+    <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
     </div>
-</div>
+
+    <div class="project-card">
+        <h3>To-Do List</h3>
+        <p>An app for managing daily tasks efficiently.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This responsive personal portfolio website.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@email.com</p>
+    <p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
